@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogs</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            text-align: center;
+            font-family: sans-serif;
+            letter-spacing: normal;
+            line-height: 1.5rem;
+        }
+        .header{
+            margin-left: 1rem;
+        }
+        .blogs-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .blogs-container div{
+            width: 80%;
+            height: auto;
+            margin: 2rem auto;
+            background: white;
+            padding: .6rem 1rem;
+            text-align: start;
+            border-radius: .5rem;
+            border: 1px solid black;
+            box-shadow: 4px 8px 8px rgba(0,0,0,.5),4px 4px 0 8px whitesmoke;
+        }
+        .blogs-container div h3{
+            color: blue;
+            font-size: 2rem;
+        }
+        
+        .blogs-container div p{
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">BLOGS</h1>
+    <div class="blogs-container">
+        <div class="question-1">
+            <h3>Local Storage vs Session Storage</h3>
+            <p>local Storage: Data stored in local storage never expires, and it has a   capacity of 10mb. It stores data in the browser.
+                Session Storage: Data stored in the session storage expires after the window is closed. It has a lesser capacity than local storage of 5mb. It also stores data in the browser.
+            </p>
+        </div>
+        <div class="question-2">
+            <h3>Global scope and block scope differences</h3>
+            <p>
+                Global Scope: We often identify those scopes as local scopes and identify the top-level scope as the global scope. In a browser environment, the global scope is controlled by the window object while in Node.js, it’s controlled by the global object.
+
+                Block Scope:Block scopes are what you get when you use if statements, for statements, and the like. You can also use them stand-alone with a simple begin-end curly braces {}, not to be confused with empty object literals.
+            </p>
+        </div>
+        <div class="question-3">
+            <h3>Javascript event loop</h3>
+            <p>
+                Javascript is a synchronus programming language, but it can achieve asynchronus capability using the browsers help.Event loop , call stack, and the browser works together to make it asyncronus. When there is a function in call stack the event loop will wait and store the other functions and when the call stack is empty it will push the next function in line for execution.
+            </p>
+        </div>
+        <div class="question-4">
+            <h3>How many ways can we get undefined</h3>
+            <p>
+                1) Variable that is not initialized will give undefined. <br>
+                2) Function with no return <br>
+                3) Parameter that is not passed will be undefined <br>
+                4) If return has nothing on the right side <br>
+                5) Property that doesn't exist in an object will give you undefined <br>
+                6) Accessing array elements outside of the index range <br>
+                7)deleting an element inside an array <br>
+                8)Set a value direclty to undefined <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
